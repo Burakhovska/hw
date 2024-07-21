@@ -1,10 +1,11 @@
+import SimpleLightbox from "simplelightbox";
+import "simplelightbox/dist/simple-lightbox.min.css";
 // Add imports above this line
 import { galleryItems } from './gallery-items';
 // Change code below this line
 
 
-import SimpleLightbox from "simplelightbox";
-import "simplelightbox/dist/simple-lightbox.min.css";
+
 
 const gallery = document.querySelector('.gallery');
 
@@ -24,13 +25,13 @@ const markup = galleryItems.map(({preview, original, description}) =>
         captionDelay: 250
     });
 
-    lightbox.on('show.simplelightbox', function (evt) {
+    // lightbox.on('show.simplelightbox', function (evt) {
             
-    `<div class="gallery">
-        <a href="${original}">
-        <img src="${original}" 
-        alt="${description}" 
-        title="${description}"/></a>
-    </div>`
-    console.dir(evt.target);
-    });
+    // `<div class="gallery">
+    //     <a href="${original}">
+    //     <img src="${original}" 
+    //     alt="${description}" 
+    //     title="${description}"/></a>
+    // </div>`
+    // console.dir(evt.target);
+    // });
